@@ -1,0 +1,30 @@
+!!!
+%html
+  %head
+    %title New Student
+    %link{ rel: "stylesheet", type: "text/css", href: "/stylesheets/screen.css" }
+  %body
+    %div#logo
+      %img{ src: '/images/logo.png' }
+    %div#list
+      %a{ href: '/?fields=username' }
+        Home
+      %h1= @user.username
+      - if @user.username == ADMIN_USERNAME
+        Role: Admin
+        %br
+        ID:
+        = FLAG
+      - else
+        Role: Student
+        %br
+        ID: "MCA-#{@user.id}"
+        %table
+          %tr
+            %th Class
+            %th Grade
+          - ['AP Calculus AB', 'History', 'English', 'Economics', 'Phyics'].each do |course|            
+            %tr
+              %td= course
+              %td= random_grade
+            

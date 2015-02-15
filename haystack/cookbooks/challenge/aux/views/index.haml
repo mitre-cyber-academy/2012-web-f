@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title Student Directory
+    %link{ rel: "stylesheet", type: "text/css", href: "/stylesheets/screen.css" }
+  %body
+    %div#logo
+      %img{ src: '/images/logo.png' }
+    %div#list
+      %a{ href: '/account' }
+        View my account
+      %br
+      %a{ href: '/new' }
+        Create new account
+      %h1 Student &amp; Staff Directory
+      %table
+        %tr
+          %th Username
+        - @users.each_with_index do |user, i| 
+          - if(i>1) 
+            %td= "Nice try :D"
+            - break
+          %tr
+            %td= user.to_s
+  %footer
+    = "<!-- #{@count} users and counting -->"
+          

@@ -1,0 +1,5 @@
+--- 
+name: "Making the grade"
+description: |
+  It looks like there's a vulnerability in the [student directory](http://$haystick) system. You've been dying for that new Macbook Pro with Retina display and need some fast cash so a few other students have paid you to change their AP Calculus grades. This can only be done through an admin account.
+flag: "MCA-D2242B07"

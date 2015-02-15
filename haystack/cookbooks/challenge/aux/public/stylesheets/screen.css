@@ -1,0 +1,32 @@
+html {
+	
+}
+
+a:link { color: rgb(184, 216, 213); }
+a:visited { color: rgb(184, 216, 213); }
+a:hover { color: rgb(184, 216, 213); }
+a:active { color: rgb(184, 216, 213); }
+
+body {
+	background-color: #fff;
+	color: blue;
+	font-size: 17pt;
+}
+
+#logo {
+	width: 200px;
+	margin: 0 auto;
+}
+
+#list {
+	width: 600px;
+	margin: 0 auto;
+}
+
+footer {
+	font-size: 10pt;
+	color: gray;
+	position: absolute; 
+	bottom: 0; 
+	text-align:center
+}
